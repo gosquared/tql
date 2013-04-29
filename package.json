@@ -12,6 +12,11 @@
   "author": "Simon Tabor",
   "license": "MIT",
   "dependencies": {
-    "mysql": "~2.0.0-alpha7"
+    "mysql": "~2.0.0-alpha7",
+    "debug": "~0.7.2"
+  },
+  "devDependencies": {
+    "should": "~1.2.2",
+    "mocha": "~1.9.0"
   }
 }
