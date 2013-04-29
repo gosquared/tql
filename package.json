@@ -1,0 +1,17 @@
+{
+  "name": "tql",
+  "version": "0.0.0",
+  "description": "Creates mock MySQL databases based on your schema",
+  "main": "index.js",
+  "repository": "",
+  "keywords": [
+    "mysql",
+    "testing",
+    "sql"
+  ],
+  "author": "Simon Tabor",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "~2.0.0-alpha7"
+  }
+}
