@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Creates mock MySQL databases based on your schema",
   "main": "index.js",
-  "repository": "",
+  "repository": "git://github.com/gosquared/tql.git",
   "keywords": [
     "mysql",
     "testing",
