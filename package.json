@@ -1,6 +1,6 @@
 {
   "name": "tql",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Creates mock MySQL databases based on your schema",
   "main": "index.js",
   "repository": "git://github.com/gosquared/tql.git",

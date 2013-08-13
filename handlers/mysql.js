@@ -5,6 +5,7 @@ var mysql = require('mysql');
 
 
 var sql = module.exports = function(config) {
+  this.mysql = mysql;
   this.client = mysql.createConnection(config);
 
 };
@@ -23,17 +24,6 @@ sql.prototype.connect = function(cb) {
 
 sql.prototype.query = function(query, params, cb, fail) {
   var self = this;
-
-  // if (!mysql.isUp() && !fail) {
-  //   self.connect(function() {
-  //     self.query(query, params, cb, true);
-  //   });
-
-  //   return;
-  // } else if (!mysql.isUp()) {
-  //   debug('failed connecting to mysql');
-  //   return false;
-  // }
 
   if (!cb) {
     cb = params;

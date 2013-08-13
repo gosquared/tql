@@ -34,9 +34,9 @@ TQL.prototype.create = function(cb) {
 TQL.prototype.insert = function(table, keys, data, cb) {
   var self = this;
 
-  var query = 'INSERT INTO '+table+' ('+keys.join(',')+') VALUES ';
+  var query = 'INSERT INTO '+table+' ('+keys.map(self.mysql.mysql.escapeId).join(',')+') VALUES ';
   for (var i = 0; i < data.length; i++) {
-    query += '("'+data[i].join('","')+'")';
+    query += '('+data[i].map(self.mysql.mysql.escape).join(',')+')';
     if (i < data.length -1) query += ',';
   }
   self.mysql.query(query, function(err,rows) {
